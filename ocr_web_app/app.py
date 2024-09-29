@@ -4,6 +4,9 @@ import cv2
 import numpy as np
 from PIL import Image
 import re
+import pytesseract
+
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'  # Adjust this based on your installation
 
 # Title of the web app
 st.title("OCR Text Extraction and Search")
